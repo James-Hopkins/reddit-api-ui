@@ -1,0 +1,23 @@
+stages:
+  - build
+  - deploy
+
+build:
+  script: |
+    npm install # Install all dependencies
+    npm run build # Build command
+  artifacts:
+    paths:
+      - ./build
+
+deploy:
+  image: python:3.8-slim
+  stage: deploy
+  only:
+    - master
+  script:
+    - pip install awscli
+    - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+    - aws s3 rm s3://reddit-api-ui --recursive
+    - aws s3 sync ./build s3://reddit-api-ui --acl public-read

@@ -9,9 +9,10 @@ const Search = ({ getSubReddit }) => {
     }
 
     return (
-        <section>
+        <section className='centerDiv'>
             <form>
                 <input
+                    className='center'
                     type='text' 
                     placeholder='Search reddits' 
                     value={text}

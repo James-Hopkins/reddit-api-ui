@@ -1,0 +1,11 @@
+.header {
+  grid-area: header;
+  width: 100%;
+  height: 10%;
+  background-color: #005cab;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}

@@ -5,6 +5,16 @@ import Search from './ui/Search'
 import Next from './ui/Next'
 import Previous from './ui/Previous'
 import PostGrid from './posts/PostGrid'
+import './css/MainGrid.css';
+import './css/Header.css';
+import './css/Search.css';
+import './css/PostGrid.css';
+import './css/PostItems.css';
+import './css/Buttons.css';
+import './css/Footer.css';
+import Footer from './ui/Footer'
+
+
 
 const App = () => {
     const [items, setItems] = useState([])
@@ -28,12 +38,15 @@ const App = () => {
     
 
     return (
-        <div className='container'>
+        <div className='grid-container'>
             <Header />
-            <Search getSubReddit={(subReddit) => setSubReddit(subReddit)}/>
-            <PostGrid isLoading={isLoading} items={items} />
-            <Next getOffset={(offset) => setOffset(offset)} />
-            <Previous getOffset={(offset) => setOffset(offset)} />
+            <main className='main'>
+                <Search getSubReddit={(subReddit) => setSubReddit(subReddit)} />
+                <PostGrid isLoading={isLoading} items={items} />
+                <Next getOffset={(offset) => setOffset(offset)} />
+                <Previous getOffset={(offset) => setOffset(offset)} />
+            </main>
+            <Footer />
         </div>
     )
 }

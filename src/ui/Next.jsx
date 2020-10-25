@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import '../Buttons.css';
 
 const Next = ({ getOffset}) => {
     const [offset, setOffset] = useState(10)

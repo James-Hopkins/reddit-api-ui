@@ -2,11 +2,14 @@ import React from 'react'
 
 const PostItem = ({ item }) => {
     return (
-        <div>
-            <h1>{item.data.title}</h1>
-            <h4>{item.data.link_flair_text}</h4>
-            <h8>{item.data.author}</h8>
-            <h10>{item.data.url}</h10>
+        <div className="boxes">
+            <a href={item.data.url}>
+                <div>
+                    <h3>{item.data.title}</h3>
+                    <h6>{item.data.link_flair_text}</h6>
+                    <h9>{item.data.author}</h9>
+                </div>
+            </a>
         </div>
     )
 }

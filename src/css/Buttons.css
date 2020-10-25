@@ -9,7 +9,6 @@
   color: #ffffff;
   font-family: Arial;
   font-size: 15px;
-  padding: 9px 23px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #263666;
 }
@@ -19,5 +18,4 @@
 }
 .myButton:active {
   position: relative;
-  top: 1px;
 }

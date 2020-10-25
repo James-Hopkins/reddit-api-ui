@@ -1,0 +1,16 @@
+.center {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Knewave", cursive;
+}
+
+.centerDiv {
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
