@@ -1,9 +1,10 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header header header header header"
-    "main main main main main"
-    "footer footer footer footer footer";
+    "header header"
+    "main main"
+    "previous next"
+    "footer footer";
   grid-gap: 10px;
   background-color: #e5eef5;
   padding: 10px;
@@ -12,5 +13,22 @@
 .main {
   grid-area: main;
   padding-top: 10%;
-  padding-bottom: 5%;
+}
+
+.next {
+  grid-area: next;
+  padding-bottom: 10%;
+}
+
+.previous {
+  grid-area: previous;
+  padding-bottom: 10%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }

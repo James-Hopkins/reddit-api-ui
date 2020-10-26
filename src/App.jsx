@@ -50,17 +50,17 @@ const App = () => {
             <main className='main'>
                 <Search getSubReddit={(subReddit) => setSubReddit(subReddit)} />
                 <PostGrid isLoading={statefulIsLoading} items={items} />
-                <section>
-                    <button className='myButton' onClick={ () => next(statefulOffset, 15) }>
-                        Next 
-                    </button>
-                </section>
-                <section>
-                    <button className='myButton' onClick={ () => previous(statefulOffset, 0) }>
-                        previous 
-                    </button>
-                </section>
             </main>
+            <section className='next'>
+                <button className='myButton' onClick={ () => next(statefulOffset, 15) }>
+                    Next 
+                </button>
+            </section>
+            <section className='previous'>
+                <button className='myButton' onClick={ () => previous(statefulOffset, 0) }>
+                    previous 
+                </button>
+            </section>
             <Footer />
         </div>
     )

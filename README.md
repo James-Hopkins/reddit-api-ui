@@ -1,9 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Site should be live here: http://reddit-api-ui.s3-website-eu-west-1.amazonaws.com/
+
 ## Prequesites
 
 https://www.npmjs.com/get-npm
+
 https://www.npmjs.com/package/axios
+
+### `npm install`
 
 ## Available Scripts
 
