@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 
+/**
+ * Recieves the input of the search and returns the the search box with the search value.
+ */
 const Search = ({ getSubReddit }) => {
     const [text, setText] = useState('')
     
